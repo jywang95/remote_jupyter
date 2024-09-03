@@ -16,7 +16,7 @@ port=9000
 node=$(hostname -s)
 user=$(whoami)
 
-python test.py
+srun python test.py
 
 
 # run jupyter notebook
