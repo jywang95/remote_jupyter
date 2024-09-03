@@ -16,8 +16,5 @@ port=9000
 node=$(hostname -s)
 user=$(whoami)
 
-srun python test.py
 
-
-# run jupyter notebook
-# jupyter-notebook --no-browser --port=${port} --ip=${node}
+jupyter-notebook --no-browser --port=${port} --ip=${node}
