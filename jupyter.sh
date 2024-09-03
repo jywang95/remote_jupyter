@@ -6,7 +6,8 @@
 #SBATCH -t 2:00:00
 
 
-unset XDG_RUNTIME_DIR
-cd $HOME
 
-jupyter-notebook --ip=$(hostname -i) --port=9000
+source ~/miniconda3/etc/profile.d/conda.sh
+conda activate fl
+
+srun -N1 jupyter-notebook --ip=$(hostname -i) --port=9000
