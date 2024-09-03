@@ -5,4 +5,4 @@
  #SBATCH -N 1
  #SBATCH -t 2:00:00
 
-jupyter-notebook --ip=$(hostname -i) --port=9000
+srun jupyter-notebook --ip=$(hostname -i) --port=9000
