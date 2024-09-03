@@ -1,5 +1,5 @@
 #!/bin/bash
-#SBATCH -A MEB128
+#SBATCH -A MED128
 #SBATCH -J test
 #SBATCH -p gpu_acmhs
 #SBATCH -N 1
