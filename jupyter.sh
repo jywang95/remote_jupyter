@@ -9,4 +9,4 @@
 unset XDG_RUNTIME_DIR
 cd $HOME
 
-srun jupyter-notebook --ip=$(hostname -i) --port=9000
+jupyter-notebook --ip=$(hostname -i) --port=9000
