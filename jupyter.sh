@@ -1,4 +1,4 @@
- #!/bin/bash
+ #!/bin/sh
  #SBATCH -A MEB128
  #SBATCH -J test
  #SBATCH -p gpu_acmhs
