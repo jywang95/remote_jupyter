@@ -12,4 +12,6 @@
 source ~/miniconda3/etc/profile.d/conda.sh
 conda activate fl
 
+unset XDG_RUNTIME_DIR
+cd $HOME
 srun -N1 jupyter-notebook --ip=$(hostname -i) --port=9000
