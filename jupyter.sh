@@ -17,4 +17,4 @@ node=$(hostname -s)
 user=$(whoami)
 
 
-jupyter-notebook --no-browser --port=${port} --ip=${node}
+srun jupyter-notebook --no-browser --port=${port} --ip=${node}
