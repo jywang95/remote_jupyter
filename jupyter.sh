@@ -12,7 +12,7 @@
 source ~/miniconda3/etc/profile.d/conda.sh
 conda activate fl
 
-port=9000
+port=1995
 node=$(hostname -s)
 user=$(whoami)
 
