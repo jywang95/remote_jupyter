@@ -9,8 +9,9 @@
 
 
 
-source ~/miniconda3/etc/profile.d/conda.sh
-conda activate fl
+# source ~/miniconda3/etc/profile.d/conda.sh
+source /gpfs/wolf2/olcf/stf007/8i9/jupyter_env
+
 
 port=1995
 node=$(hostname -s)
