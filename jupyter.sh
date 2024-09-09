@@ -9,14 +9,9 @@
 
 
 
-# source ~/miniconda3/etc/profile.d/conda.sh
-source /gpfs/wolf2/olcf/stf007/8i9/jupyter_env
-
-
-port=1995
-node=$(hostname -s)
-user=$(whoami)
+source activate /gpfs/wolf2/olcf/stf007/8i9/jupyter_env
 
 
 
-jupyter-notebook --no-browser --port=${port} --ip=baseline-gpu1
+
+jupyter notebook --no-browser --port=8008 --ip=baseline-gpu1
