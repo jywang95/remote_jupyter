@@ -16,5 +16,7 @@ port=1995
 node=$(hostname -s)
 user=$(whoami)
 
+echo %node%
+
 
 jupyter-notebook --no-browser --port=${port} --ip=${node}
