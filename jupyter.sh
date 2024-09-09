@@ -9,9 +9,9 @@
 
 
 
-source activate /gpfs/wolf2/olcf/stf007/8i9/jupyter_env
+# source activate /gpfs/wolf2/olcf/stf007/8i9/jupyter_env
 
-
-
+source ~/miniconda3/etc/profile.d/conda.sh
+conda activate fl
 
 jupyter notebook --no-browser --port=8008 --ip=baseline-gpu1
