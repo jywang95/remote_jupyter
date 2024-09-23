@@ -15,4 +15,4 @@ source ~/miniconda3/etc/profile.d/conda.sh
 conda activate fl
 export CUDA_VISIBLE_DEVICES=0 
 
-srun bash /ccsopen/home/w7j/remote_jupyter/aug-pe/scripts/embeddings.sh --yelp  
+srun bash ~/remote_jupyter/aug-pe/scripts/embeddings.sh --yelp  
