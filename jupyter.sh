@@ -15,4 +15,4 @@ source ~/miniconda3/etc/profile.d/conda.sh
 conda activate fl
 export CUDA_VISIBLE_DEVICES=0 
 
-srun bash /aug-pe/scripts/embeddings.sh --yelp  
+srun bash ./aug-pe/scripts/embeddings.sh --yelp  
