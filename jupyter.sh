@@ -3,7 +3,7 @@
 #SBATCH -J test
 #SBATCH -p gpu_acmhs
 #SBATCH -N 1
-#SBATCH -t 4:59:00
+#SBATCH -t 00:20:00
 #SBATCH -o ./%j-multithread-output.txt
 #SBATCH -e ./%j-multithread-error.txt
 
@@ -13,5 +13,6 @@
 
 source ~/miniconda3/etc/profile.d/conda.sh
 conda activate fl
+export CUDA_VISIBLE_DEVICES=0 
 
-jupyter notebook --no-browser --port=8008 --ip=baseline-gpu1
+srun bash /ccsopen/home/w7j/remote_jupyter/aug-pe/scripts/embeddings.sh --yelp  
