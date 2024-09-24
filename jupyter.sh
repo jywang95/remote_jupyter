@@ -13,6 +13,5 @@
 
 source ~/miniconda3/etc/profile.d/conda.sh
 conda activate fl
-export CUDA_VISIBLE_DEVICES=0 
 
-srun bash ./scripts/embeddings.sh --yelp  
+jupyter notebook --no-browser --ip=baseline-gpu1 --port=8008
